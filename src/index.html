@@ -1,23 +1,94 @@
 <!--
-TODO: ===
+TODO:
 -->
 
 <!doctype html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
 
-  <title>TITOLO</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>JS Timer</title>
 </head>
+
 <body>
 
-    <div id="result"></div>
+    <div class="container">
 
-<script src="js/script.js"></script>
+        <div class="row">
+            <h1 id="title">JS Timer</h1></div>
+
+        <div class="row">
+            <div id="bordo">
+                <div id="result">
+                </div>
+                <div id="ritaglio"><div id="barra">
+
+                </div></div>
+            </div>
+            <div id="result">
+                <h3></h3>
+            </div>
+            <div id="percent">
+                <h1></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <h3>Work Time</h3>
+                <!-- <select class="form-control form-control-lg disable" id="worktime">
+        <option value="1">1 ONLY FOR TEST</option>
+        <option value="2">2 ONLY FOR TEST</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25" selected="selected">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+        <option value="50">50</option>
+        <option value="50">55</option> -->
+
+<div class="work setTime">              <p class="minus"><i class="fa fa-minus-square"></p>
+              <p class="choise">25</p>
+              <p class="plus"><i class="fa fa-plus-square"></p></div>
+      </select>
+            </div>
+            <div class="col-md-3 break">
+                <h3>Break Time</h3>
+                <!-- <select class="form-control form-control-lg" id="breaktime">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5" selected="selected">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select> -->
+
+      <div class="break setTime">              <p class="minus"><i class="fa fa-minus-square"></p>
+                    <p class="choise">5</p>
+                    <p class="plus"><i class="fa fa-plus-square"></p></div>
+            </select>
+
+    </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>

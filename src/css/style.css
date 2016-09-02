@@ -1,5 +1,82 @@
 /*
 * TODO
-* ---
+*
+* bordo e tempo sovrapposti... ???
 */
+/*************\ Layout \****************/
+#barra {
+    width: 290px;
+    height: 0%;
+    z-index: -1000;
+}
+#ritaglio {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  height: 290px;
+  z-index: -1000;
+}
+#bordo {
+    margin: 0 auto;
+    border: 5px, solid, navy;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: +1000;
+    padding: 0px;
+}
 
+#result {
+    display: block;
+    /*width:100vh;
+    height: 100vh;*/
+    z-index: +1000;
+    margin: 10vh 8vh;
+
+    position: fixed;
+}
+
+#selector {
+  width: 30%;
+}
+
+.setTime {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+/*************\ Colori \****************/
+#barra,
+#title {
+    background: yellowgreen;
+}
+
+#bordo {
+    border: 5px, solid, navy;
+}
+
+#result {
+  color: purple;
+}
+
+/*************\ Typog \****************/
+#title {
+  font-size: 3rem;
+  text-align: center;
+}
+h3 {
+  margin-top: 2.5%;
+}
+#barra {
+
+}
+
+#bordo {
+
+}
+
+#result {
+  font-weight: bold;
+  font-size: 4rem;
+}
