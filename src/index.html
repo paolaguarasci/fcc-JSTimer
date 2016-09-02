@@ -3,7 +3,7 @@ TODO:
 -->
 
 <!doctype html>
-<html lang="it">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@ TODO:
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <title>JS Timer</title>
 </head>
 
@@ -20,14 +20,18 @@ TODO:
 
     <div class="container">
 
-        <div class="row">
-            <h1 id="title">JS Timer</h1></div>
+        <div class="row top">
+          <img src="img/js.png" alt="">
+          <p id="title">Timer</p>
+
+
+        </div>
 
         <div class="row">
             <div id="bordo">
-                <div id="result">
+                <div id="result">Start!
                 </div>
-                <div id="ritaglio"><div id="barra">
+                <div id="ritaglio"><div id="barra" class="green">
 
                 </div></div>
             </div>
@@ -39,7 +43,7 @@ TODO:
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-md-offset-3">
+            <div class="col-xs-6 col-md-2 col-md-offset-4">
                 <h3>Work Time</h3>
                 <!-- <select class="form-control form-control-lg disable" id="worktime">
         <option value="1">1 ONLY FOR TEST</option>
@@ -61,8 +65,8 @@ TODO:
               <p class="plus"><i class="fa fa-plus-square"></p></div>
       </select>
             </div>
-            <div class="col-md-3 break">
-                <h3>Break Time</h3>
+            <div class="col-xs-6 col-md-2 break">
+                <h3 class="left">Break Time</h3>
                 <!-- <select class="form-control form-control-lg" id="breaktime">
         <option value="1">1</option>
         <option value="2">2</option>

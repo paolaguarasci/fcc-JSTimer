@@ -73,8 +73,7 @@ $('#bordo').click(function () {
   } else if (run) {
     clearInterval(start)
     run = false
-    $('#worktime').attr('disabled', false)
-    $('#breaktime').attr('disabled', false)
+    $('#result').html('Pause')
   }
 })
 // ///////////////////////////////////////////////

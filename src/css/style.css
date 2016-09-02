@@ -2,37 +2,67 @@
 * TODO
 *
 * bordo e tempo sovrapposti... ???
+
+/*** Primary color:
+
+   shade 0 = #3370FF = rgb( 51,112,255) = rgba( 51,112,255,1) = rgb0(0.2,0.439,1)
+   shade 1 = #82A6F8 = rgb(130,166,248) = rgba(130,166,248,1) = rgb0(0.51,0.651,0.973)
+   shade 2 = #598BFD = rgb( 89,139,253) = rgba( 89,139,253,1) = rgb0(0.349,0.545,0.992)
+   shade 3 = #145BFF = rgb( 20, 91,255) = rgba( 20, 91,255,1) = rgb0(0.078,0.357,1)
+   shade 4 = #004BF6 = rgb(  0, 75,246) = rgba(  0, 75,246,1) = rgb0(0,0.294,0.965)
+
+*** Secondary color (1):
+
+   shade 0 = #FFD81B = rgb(255,216, 27) = rgba(255,216, 27,1) = rgb0(1,0.847,0.106)
+   shade 1 = #FFE878 = rgb(255,232,120) = rgba(255,232,120,1) = rgb0(1,0.91,0.471)
+   shade 2 = #FFDF46 = rgb(255,223, 70) = rgba(255,223, 70,1) = rgb0(1,0.875,0.275)
+   shade 3 = #FFD300 = rgb(255,211,  0) = rgba(255,211,  0,1) = rgb0(1,0.827,0)
+   shade 4 = #FFD300 = rgb(255,211,  0) = rgba(255,211,  0,1) = rgb0(1,0.827,0)
+
+*** Secondary color (2):
+
+   shade 0 = #FF821B = rgb(255,130, 27) = rgba(255,130, 27,1) = rgb0(1,0.51,0.106)
+   shade 1 = #FFB578 = rgb(255,181,120) = rgba(255,181,120,1) = rgb0(1,0.71,0.471)
+   shade 2 = #FF9A46 = rgb(255,154, 70) = rgba(255,154, 70,1) = rgb0(1,0.604,0.275)
+   shade 3 = #FF7400 = rgb(255,116,  0) = rgba(255,116,  0,1) = rgb0(1,0.455,0)
+   shade 4 = #FF7400 = rgb(255,116,  0) = rgba(255,116,  0,1) = rgb0(1,0.455,0)
 */
+
 /*************\ Layout \****************/
+img {
+  max-width: 100%;
+}
 #barra {
-    width: 290px;
-    height: 0%;
+    width: 300px;
+    height: 100%;
     z-index: -1000;
 }
 #ritaglio {
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
-  height: 290px;
+  height: 300px;
+  width: 300px;
   z-index: -1000;
+  position: absolute;
+  margin: -300px 0 0 -150px;
+  left: 50%;
 }
 #bordo {
-    margin: 0 auto;
-    border: 5px, solid, navy;
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
     border-radius: 50%;
     z-index: +1000;
-    padding: 0px;
+    position: absolute;
+    margin: 0px 0 0 -150px;
+    left: 50%;
 }
 
 #result {
-    display: block;
-    /*width:100vh;
-    height: 100vh;*/
+    width: 300px;
+    height: 300px;
     z-index: +1000;
-    margin: 10vh 8vh;
-
-    position: fixed;
+    text-align: center;
+    line-height: 290px;
 }
 
 #selector {
@@ -46,27 +76,46 @@
   justify-content: space-around;
   font-size: 1.5rem;
 }
+.top {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+h3{
+  margin-top: 3rem;
+
+}
 /*************\ Colori \****************/
-#barra,
-#title {
-    background: yellowgreen;
+body {
+  background: #FFD81B;
+}
+.green {
+    background: #FF821B;
 }
 
 #bordo {
-    border: 5px, solid, navy;
+    border: 5px, solid, #004BF6;
 }
 
 #result {
-  color: purple;
+  color: #004BF6;
 }
 
 /*************\ Typog \****************/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 #title {
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
 }
-h3 {
+h1 {
   margin-top: 2.5%;
+}
+h3{
+  text-align: center;
 }
 #barra {
 
@@ -79,4 +128,11 @@ h3 {
 #result {
   font-weight: bold;
   font-size: 4rem;
+}
+/*************\ Mouse \****************/
+
+#result:hover,
+.plus,
+.minus {
+  cursor: pointer;
 }
